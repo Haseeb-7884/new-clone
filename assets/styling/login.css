@@ -1,0 +1,112 @@
+.login_section{
+    height: 350px;
+    width: 70%;
+    margin: 100px auto;
+    border-radius: 5px;
+    background-color: #1c1816;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 15px 20px;
+}
+.section_login_first{
+    flex: 1;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    
+}
+.section_login_first > a{
+    width: 5%;
+    height: 100%;
+    border: 2px solid #ea002a;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+.section_login_first > section{
+    width: 70%;
+    height: 100%;
+    /* background-color: palevioletred; */
+    margin-right: 90px;
+}
+.section_login_first > section > img{
+    height: 100%;
+    width: 100%;
+}
+.section_login_second{
+    flex: 1;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 20px;
+}
+.login_input_container{
+    background-color: #262221;
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px; 
+    
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;  
+    padding: 5px 10px 0px 10px;
+}
+.login_input_container > p{
+    font-size: 12px;
+}
+.login_input_container > span{
+    font-size: 18px;
+}
+.login_input_field{
+    background-color: #262221;
+    color: white;
+    border: none;
+    width: 90%;
+    border-bottom: 1px solid white !important;
+}
+
+.login_input_field:focus{
+    background-color: #262221;
+    outline: none; 
+    color: white;
+    padding-left: 10px;
+    border-bottom: 1px solid #ea002a;
+}
+.login_btn{
+    background-color: #ea002a;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .login_section{
+        display: block;
+        padding: 10px;
+    }
+    .section_login_first > section{
+        display: none;
+    }
+    .section_login_second{
+        display: block;
+        width: 100%;
+        margin-top: -80%;
+
+    }
+}
